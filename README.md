@@ -3,7 +3,7 @@
 A microbench of what one `bpf_xdp_egress_dev()` call adds to an XDP program. The
 kfunc resolves a VLAN ifindex to its physical parent; the cost is one
 `dev_get_by_index_rcu()`. Shared as part of our research toward a new VLAN XDP
-kfunc, not a benchmark of anything shipped.
+kfunc, not a benchmark of anything shipped. Tested on a single isolated Zen 4 core.
 
 Cost is `mode1 - mode0` per cell, measured two ways: a `PROG_TEST_RUN` self-PMU
 loop (micro, 11 paired runs/cell) and a real XDP program read with `perf stat -b`
