@@ -1,0 +1,15 @@
+kernel=7.1.0-14078-g39f1d383ccb2
+cpu=AMD Ryzen 9 7900 12-Core Processor
+core=6
+sendcore=5
+l1d_size=32K
+l1i_size=32K
+l2_size=1024K
+l3_size=32768K
+prefetch_off=yes
+governor=performance
+boost_off=yes
+perf_event_paranoid=-1
+bpf_stats=1
+isolation_verified=yes
+net_rx_action_pct=30.92

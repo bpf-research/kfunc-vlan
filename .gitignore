@@ -1,0 +1,25 @@
+# Build artefacts (rebuilt from source by `make` against your kernel's BTF)
+*.o
+*.bpf.o
+*.skel.h
+vmlinux.h
+/kfunc_drive
+/kfunc_xdp
+/pkt_send
+/controls/chase
+
+# Python
+__pycache__/
+*.pyc
+
+# Local benchmark output (re-runs land here, keep them out of the tree)
+/results/_local/
+/results/scratch/
+
+# Editor and OS noise
+*.swp
+*~
+.DS_Store
+
+# Internal-only notes (not published)
+NOTES.md
